@@ -9,7 +9,7 @@ Set folder = fileSystem.GetFolder(path)
 for each file in folder.Files
 CurrentTime = dateadd("h", -0, Now) 
 FileTime = file.DateLastModified
-if instr(file, "CSA Salaried Headcount for RPA - Weekly Output") then        
+if instr(file, "Enter your similar file name for make difference with another type") then        
 if FileTime < CurrentTime then            
 t =  CurrentTime - FileTime
 list.Add t
